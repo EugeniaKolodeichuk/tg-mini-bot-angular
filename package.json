@@ -1,0 +1,21 @@
+{
+  "name": "tg-mini-bot-angular",
+  "version": "1.0.0",
+  "description": "Telegram Mini App with Angular 17 frontend",
+  "private": true,
+  "workspaces": [
+    "bot",
+    "webapp"
+  ],
+  "scripts": {
+    "start:bot": "npm run start --workspace=bot",
+    "dev:bot": "npm run dev --workspace=bot",
+    "start:webapp": "npm run start --workspace=webapp",
+    "build:webapp": "npm run build --workspace=webapp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EugeniaKolodeichuk/tg-mini-bot-angular.git"
+  },
+  "license": "ISC"
+}
