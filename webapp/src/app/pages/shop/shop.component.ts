@@ -29,7 +29,7 @@ export class ShopComponent {
   products = inject(ProductsService);
 
   constructor() {
-    this.telegram.MainButton.show();
+    this.telegram.BackButton.hide();
     console.log('products', this.products.byGroup)
   }
 }

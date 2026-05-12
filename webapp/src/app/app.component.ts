@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { TelegramService } from './services/telegram.service';
 
 @Component({
   selector: 'app-root',
@@ -21,6 +22,12 @@ import { RouterOutlet } from '@angular/router';
   // `,
 })
 export class AppComponent {
-  title = 'webapp';
-  items = [1, 2, 3, 4, 5]
+  // title = 'webapp';
+  // items = [1, 2, 3, 4, 5]
+
+  telegram = inject(TelegramService);
+
+  constructor() {
+    this.telegram.ready();
+  }
 }
