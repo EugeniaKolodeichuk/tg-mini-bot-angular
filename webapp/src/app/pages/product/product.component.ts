@@ -25,7 +25,7 @@ export class ProductComponent implements OnInit, OnDestroy {
   }
 
   onBackButtonClick() {
-    this.router.navigate(['']);
+    this.router.navigate(['/']);
   }
 
   ngOnInit(): void {
